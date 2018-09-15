@@ -22,11 +22,7 @@ class School
  end
 
   def grade(input)
-    roster.collect do |student_grade, student_name|
-      if input == student_grade
-        return student_name
-      end
-    end
+    roster[input]
   end
 
   def sort
